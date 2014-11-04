@@ -7,7 +7,7 @@ w = Wikia(domain='lostpedia')
 a = w.article(query="Richard_Alpert")
 
 for i, title in enumerate(w.index(start='a', throttle=1.0, cached=True)):     
-     if i >= 3:
+     if i >= 8:
          break
      article = w.search(title)
      print repr(article.title)
